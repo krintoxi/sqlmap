@@ -59,6 +59,9 @@ product_id
 blob_id
 distip
 artist_id
+principal
+db23
+db_1
 empno
 customer_name
 grade

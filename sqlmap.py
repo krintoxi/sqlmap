@@ -92,7 +92,8 @@ def main():
             sys.stderr = StdDbOut(conf.taskid, messagetype="stderr")
             setRestAPILog()
 
-        banner()
+            print "SQLMAP NoobSecToolkit Edition"
+            #banner()
 
         conf.showTime = True
         dataToStdout("[!] legal disclaimer: %s\n\n" % LEGAL_DISCLAIMER, forceOutput=True)
@@ -126,7 +127,7 @@ def main():
 
     except KeyboardInterrupt:
         print
-        errMsg = "user aborted"
+        errMsg = "user has aborted"
         logger.error(errMsg)
 
     except EOFError:
